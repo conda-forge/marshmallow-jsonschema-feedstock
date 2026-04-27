@@ -1,5 +1,5 @@
 {% set name = "marshmallow-jsonschema" %}
-{% set version = "0.13.0" %}
+{% set version = "0.16.0" %}
 
 
 package:
@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/marshmallow-jsonschema-{{ version }}.tar.gz
-  sha256: f8ce19cfc0edd909e81f141d7420c33544b849bc5ebbfae8f6a3deea5a3b1f47
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: d504ab6156a272d9be850469b2fc4ab3f6e858c3cb66791724afa890dfdee5c8
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
