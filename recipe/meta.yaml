@@ -21,7 +21,7 @@ requirements:
     - setuptools
     - python {{ python_min }}
   run:
-    - marshmallow >=3.11
+    - marshmallow >=3.13
     - python >={{ python_min }}
 
 test:
